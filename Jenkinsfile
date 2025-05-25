@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'your-credentials-id', url: 'https://github.com/your-user/your-repo.git'
+                git credentialsId: 'github-token', url: 'https://github.com/Nixk01/Pytst.git'
             }
         }
         stage('Setup Python Environment') {
